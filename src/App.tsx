@@ -4,8 +4,8 @@ import profileThumbnail from "./assets/profile-thumbnail.png";
 function App() {
   return (
     <main>
-      <article aria-label="Testimonial" className="testimonial">
-        <figure className="testimonial-figure">
+      <figure className="testimonial">
+        <figcaption className="testimonial-author">
           <img
             src={profileThumbnail}
             alt=""
@@ -14,10 +14,10 @@ function App() {
             className="testimonial-avatar"
           />
           <div className="testimonial-info">
-            <span className="testimonial-name">Sarah Dole</span>
+            <p className="testimonial-name">Sarah Dole</p>
             <p className="testimonial-tag">@sarahdole</p>
           </div>
-        </figure>
+        </figcaption>
         <blockquote className="testimonial-text">
           <p>
             I've been searching for high-quality abstract images for my design
@@ -25,7 +25,7 @@ function App() {
             and depth of creativity are astounding!
           </p>
         </blockquote>
-      </article>
+      </figure>
     </main>
   );
 }
